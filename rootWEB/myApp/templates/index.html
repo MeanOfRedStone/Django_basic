@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myPJT</title>
+</head>
+<body>
+    <div>
+        <form action="../login/" method="post">
+            {% csrf_token %}
+            <p><input type="text" name="id" placeholder="USER ID"></p>
+            <p><input type="password" name="pwd" placeholder="Password"> </p>
+            <p><button type="submit">Sign In</button></p>
+        </form>
+    </div>
+    <div>
+        <button onclick="location.href='../joinForm/'">Join</button>
+    </div>
+</body>
+</html>

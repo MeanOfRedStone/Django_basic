@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Form</title>
+</head>
+<body>
+    <form action="../join/" method="post">
+        {% csrf_token %}
+        <div><input type="text" name="id" placeholder="Enter ID"/></div>
+        <div><input type="password" name="pwd" placeholder="Enter Password"/></div>
+        <div><button type="submit">Register</button></div>
+
+    </form>
+</body>
+</html>

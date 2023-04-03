@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>입력받은 내용 출력</title>
+    <style>
+        table, th, td {
+            boarder: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>title</th>
+            <th>writer</th>
+            <th>regdate</th>
+        </tr>
+
+        <tbody>
+            <tr>
+                <td>{{board.title}}</td>
+                <td>{{board.writer.user_id}}</td>
+                <td>{{board.regdate}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <div>
+            <!-- 게시글 -->
+        </div>
+        <div>
+            <a href="../bbsForm/">New</a>
+        </div>
+    </div>
+
+</body>
+</html>
